@@ -1,0 +1,10 @@
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+img {margin: 50px;}
+body {
+	text-align: center;
+	background-image: url('images/IMG_1905.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
