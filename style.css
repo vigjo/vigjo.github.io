@@ -1,10 +1,19 @@
 h1 {text-align: center;}
-p {text-align: center;}
+p {text-align: center;
+	width: fit-content;}
 div {text-align: center;}
 img {margin: 50px;}
 body {
 	text-align: center;
-	background-image: url('images/IMG_1905.jpg');
+	background-image: url('images/IMG_1880.JPG');
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+h5 {
+	background-color: powderblue; 
+	width: 300px;
+	margin-left: 720px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
