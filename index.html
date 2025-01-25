@@ -1,42 +1,99 @@
 <!DOCTYPE html>
-<html>
-<!---To Do:
-.5 - add photo and basic formatting
-1 - add socials, linkedin, github, email?
-2 - add projects
-!--->
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
-<title>
-Joe Vig
-</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: rgba(200, 200, 200, 0.8);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        nav a {
+            color: #61dafb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+        section h2 {
+            border-bottom: 2px solid #61dafb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: rgba(200, 200, 200, 0.8);
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
-
-<h4>
-    <a href="https://github.com/vigjo"><img src="images/GithubIcon.png" width="25" height = "25"></a>
-    <a href="https://linkedin.com/in/joseph-vig"><img src="images/LinkedInIcon.png" width="25" height = "25"></a>
-    <a href="mailto:jvig789@gmail.com"><img src="images/gmailicon.png" width="25" height="18"></a>
-</h4>
-
-
-<h1>Joe Vig</h1>
-
-
 <body>
+    <header>
+        <h1>Joe Vig</h1>
+        <p>Software Developer | Problem Solver</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Joe, a passionate software developer with experience in building web applications, solving complex problems, and creating efficient algorithms. I'm always eager to learn and grow in the ever-evolving tech world.</p>
+    </section>
 
-<img src="images/headshot.png" alt="headshot" width="150" height ="225"> 
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Project 1:</strong> <a href="https://github.com/vigjo/ofc-poker">OFC Poker WebApp</a> - (WIP) React JS application to play Open Face Chinese Poker</li>
+        </ul>
+    </section>
 
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:jvig789@gmail.com">jvig789@gmail.com</a> or connect with me on <a href="https://linkedin.com/in/joseph-vig">LinkedIn</a>.</p>
+    </section>
 
-
-<h5>
-    <p>I am a student at the University of Michigan currently pursuing a B.S in Computer Science.</p>
-</h5>
-
-
-
-<p></p>
+    <footer>
+        <a href="https://github.com/vigjo"><img src="images/GithubIcon.png" width="25" height = "25"></a>
+        <a href="https://linkedin.com/in/joseph-vig"><img src="images/LinkedInIcon.png" width="25" height = "25"></a>
+        <a href="mailto:jvig789@gmail.com"><img src="images/gmailicon.png" width="25" height="18"></a>
+        <!-- <p>&copy; 2025 Joe Vig. All rights reserved.</p> -->
+    </footer>
 </body>
-
-
 </html>
