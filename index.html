@@ -1,99 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #000;
-            color: #fff;
-        }
-        header {
-            text-align: center;
-            padding: 2rem 0;
-            background-color: rgba(200, 200, 200, 0.8);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-        }
-        header p {
-            font-size: 1.2rem;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-        nav a {
-            color: #61dafb;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-        }
-        section h2 {
-            border-bottom: 2px solid #61dafb;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: rgba(200, 200, 200, 0.8);
-            margin-top: 2rem;
-        }
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Joe Vig is a software developer building web applications and solving complex problems.">
+    <meta name="theme-color" content="#f7f9fc">
+    <link rel="canonical" href="https://joevig.com/">
+    <meta property="og:title" content="Joe Vig | Software Developer">
+    <meta property="og:description" content="Joe Vig is a software developer building web applications and solving complex problems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joevig.com/">
+    <title>Joe Vig | Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Joe Vig</h1>
-        <p>Software Developer</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="wordmark" href="/" aria-label="Joe Vig home">JV<span aria-hidden="true"></span></a>
+            <nav aria-label="Primary navigation">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Joe, a passionate software developer with experience in building web applications, solving complex problems, and creating efficient algorithms. I'm always eager to learn and grow in the ever-evolving tech world.</p>
-    </section>
+    <main id="main-content">
+        <section class="hero container" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow" style="font-size: 1.3rem;">Joe Vig  | Software Engineer</p>
+          
+                <h1 id="hero-title">Building software for work and for fun :)</h1>
+                <div class="action-group">
+                    <a class="button button-primary" href="#projects">View my work</a>
+                    <a class="text-link" href="https://linkedin.com/in/joseph-vig">Get in touch <span aria-hidden="true">→</span></a>
+                </div>
+                
+                <!-- <ul class="hero-tags" aria-label="Focus areas">
+                    <li>Web applications</li>
+                    <li>React</li>
+                    <li>Problem solving</li>
+                </ul> -->
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> <a href="https://github.com/vigjo/ofc-poker">OFC Poker WebApp</a> - (WIP) React JS application to play Open Face Chinese Poker</li>
-        </ul>
-    </section>
+        <section class="section section-muted" id="about" aria-labelledby="about-title">
+            <div class="container about-layout">
+                <div>
+                    <p class="eyebrow">About</p>
+                    <h2 id="about-title">A practical approach to building.</h2>
+                </div>
+                <div class="prose">
+                    <p>I’m a software engineer that enjoys solving complex problems, and creating scalable software. I’m always eager to learn and grow with the technology I use.</p>
+                    <ul class="capability-list" aria-label="Areas of focus">
+                        <li>Performance Optimization</li>
+                        <li>Problem solving</li>
+                        <li>System Design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:jvig789@gmail.com">jvig789@gmail.com</a> or connect with me on <a href="https://linkedin.com/in/joseph-vig">LinkedIn</a>.</p>
-    </section>
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Selected work</p>
+                        <h2 id="projects-title">Projects</h2>
+                    </div>
+                    <a class="text-link" href="https://github.com/vigjo" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+                </div>
 
-    <footer>
-        <a href="https://github.com/vigjo"><img src="images/GithubIcon.png" width="25" height = "25"></a>
-        <a href="https://linkedin.com/in/joseph-vig"><img src="images/LinkedInIcon.png" width="25" height = "25"></a>
-        <a href="mailto:jvig789@gmail.com"><img src="images/gmailicon.png" width="25" height="18"></a>
-        <!-- <p>&copy; 2025 Joe Vig. All rights reserved.</p> -->
+                <article class="project-card">
+                    <div class="project-card-main">
+                        <p class="project-status">In progress</p>
+                        <h3>OFC Poker WebApp</h3>
+                        <p>A React JavaScript application for playing Open Face Chinese Poker.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <ul class="tag-list" aria-label="Technologies">
+                            <li>React</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <a class="button button-secondary" href="https://github.com/vigjo/ofc-poker" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-layout">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2 id="contact-title">Feel free to reach out!</h2>
+                </div>
+                <div class="contact-content">
+                    <p>Have a project, question, or opportunity in mind? I’d be glad to hear from you.</p>
+                    <a class="button button-primary" href="mailto:jvig789@gmail.com">Email Joe</a>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year">2026</span> Joe Vig</p>
+            <ul class="social-list">
+                <li><a href="https://github.com/vigjo" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
+                <li><a href="https://linkedin.com/in/joseph-vig" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
+                <li><a href="mailto:jvig789@gmail.com">Email <span aria-hidden="true">↗</span></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
