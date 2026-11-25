@@ -298,6 +298,16 @@ ul {
     overflow: hidden;
 }
 
+.project-card + .project-card {
+    margin-top: var(--space-3);
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+}
+
 .project-card-main {
     padding: var(--space-4);
 }
