@@ -12,23 +12,51 @@
     <meta property="og:url" content="https://joevig.com/">
     <title>Joe Vig | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
-</head>
+<!-- jv-styles -->
+<style>
+.jv-header {
+  background: white;
+  border-bottom: 1px solid #d9e1ed;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+.jv-bar {
+  width: min(calc(100% - 2rem), 70rem);
+  margin-inline: auto;
+  min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+}
+.jv-header nav { display: flex; flex-wrap: wrap; gap: .25rem; }
+.jv-header a { text-decoration: none; }
+.jv-mark { color: #081c3d; font-size: 1.25rem; font-weight: 800; letter-spacing: -.08em; }
+.jv-header nav a { color: #50627e; font-weight: 700; font-size: .9rem; padding: .65rem .5rem; }
+.jv-header nav a:hover, .jv-header a[aria-current] { color: #0f55ba; text-decoration: underline; }
+.jv-header a:focus-visible { outline: 3px solid #ed8b00; outline-offset: 2px; }
+@media (min-width: 42rem) {
+  .jv-bar { width: min(calc(100% - 4rem), 70rem); }
+  .jv-header nav { gap: .5rem; }
+  .jv-header nav a { padding-inline: 1rem; }
+}
+</style>
+<!-- /jv-styles --></head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="site-header">
-        <div class="container header-inner">
-            <a class="wordmark" href="/" aria-label="Joe Vig home">JV<span aria-hidden="true"></span></a>
-            <nav aria-label="Primary navigation">
-                <ul class="nav-list">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Work</a></li>
-                    <li><a href="https://games.joevig.com/">Games</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- jv-header -->
+<header class="jv-header">
+  <div class="jv-bar">
+    <a class="jv-mark" href="https://joevig.com/" aria-label="Joe Vig home">JV</a>
+    <nav aria-label="Primary navigation">
+      <a href="https://joevig.com/#about">About</a>
+      <a href="https://joevig.com/#projects">Work</a>
+      <a href="https://games.joevig.com/">Games</a>
+      <a href="https://joevig.com/#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<!-- /jv-header -->
 
     <main id="main-content">
         <section class="hero container" aria-labelledby="hero-title">
@@ -113,28 +141,17 @@
             </div>
         </section>
 
-        <!-- <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-            <div class="container contact-layout">
-                <div>
-                    <p class="eyebrow">Contact</p>
-                    <h2 id="contact-title">Feel free to reach out!</h2>
-                </div>
-                <div class="contact-content">
-                    <p>Have a project, question, or opportunity in mind? I’d be glad to hear from you.</p>
-                    <a class="button button-primary" href="mailto:jvig789@gmail.com">Email Joe</a>
-                </div>
-            </div>
-        </section> -->
+        
     </main>
 
-    <footer class="site-footer">
+    <footer id="contact" class="site-footer" aria-labelledby="contact-title">
         <div class="container footer-inner">
             <p>© <span id="year">2026</span> Joe Vig</p>
-            <ul class="social-list">
+            <div><h2 id="contact-title">Contact</h2><ul class="social-list">
                 <li><a href="https://github.com/vigjo" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
                 <li><a href="https://linkedin.com/in/joseph-vig" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
                 <li><a href="mailto:jvig789@gmail.com">Email <span aria-hidden="true">↗</span></a></li>
-            </ul>
+            </ul></div>
         </div>
     </footer>
 </body>
