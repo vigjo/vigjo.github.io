@@ -39,6 +39,9 @@
   .jv-header nav { gap: .5rem; }
   .jv-header nav a { padding-inline: 1rem; }
 }
+
+.jv-header nav a[href="https://games.joevig.com/"] { background: #e8f0ff; color: #105bc2; border-radius: 5px; }
+.jv-header [aria-current] .away { display: none; }
 </style>
 <!-- /jv-styles --></head>
 <body>
@@ -51,8 +54,7 @@
     <nav aria-label="Primary navigation">
       <a href="https://joevig.com/#about">About</a>
       <a href="https://joevig.com/#projects">Work</a>
-      <a href="https://games.joevig.com/">Games</a>
-      <a href="https://joevig.com/#contact">Contact</a>
+      <a href="https://games.joevig.com/">Games<span class="away" aria-hidden="true"> ↗</span></a>
     </nav>
   </div>
 </header>
@@ -144,14 +146,14 @@
         
     </main>
 
-    <footer id="contact" class="site-footer" aria-labelledby="contact-title">
+    <footer id="contact" class="site-footer">
         <div class="container footer-inner">
             <p>© <span id="year">2026</span> Joe Vig</p>
-            <div><h2 id="contact-title">Contact</h2><ul class="social-list">
+            <ul class="social-list">
                 <li><a href="https://github.com/vigjo" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
                 <li><a href="https://linkedin.com/in/joseph-vig" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
                 <li><a href="mailto:jvig789@gmail.com">Email <span aria-hidden="true">↗</span></a></li>
-            </ul></div>
+            </ul>
         </div>
     </footer>
 </body>
